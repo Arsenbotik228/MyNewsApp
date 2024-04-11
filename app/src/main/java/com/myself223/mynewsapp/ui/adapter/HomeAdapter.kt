@@ -8,8 +8,9 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.myself223.mynewsapp.data.model.ArticlesDto
 import com.myself223.mynewsapp.databinding.ItemNewsBinding
+import com.myself223.mynewsapp.ui.fragment.HomeFragment
 
-class HomeAdapter : ListAdapter<ArticlesDto, HomeAdapter.HomeViewHolder>(HomeDiffUtill()) {
+class HomeAdapter(homeFragment: HomeFragment) : ListAdapter<ArticlesDto, HomeAdapter.HomeViewHolder>(HomeDiffUtill()) {
     class HomeViewHolder (private val binding: ItemNewsBinding) : ViewHolder(binding.root) {
         fun onBind(it : ArticlesDto?){
             binding.postAuthor.text = it?.author

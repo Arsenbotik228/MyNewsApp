@@ -16,8 +16,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField 'String', 'BASE_URL', '\"https://gnews.io/api/v4/\"'
-        buildConfigField 'String', 'API_KEY', '\"37971a4e43bb4e57991112442241803\"'
+        buildConfigField("String" , "API_KEY" , "\"5ac4784348dd4ad7955f02437e1d72b1\"")
+        buildConfigField("String" , "BASE_URL" , "\"https://newsapi.org\"")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
