@@ -1,3 +1,4 @@
+package com.myself223.mynewsapp.ui.activity.main
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
