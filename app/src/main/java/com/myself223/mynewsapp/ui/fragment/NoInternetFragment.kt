@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.myself223.mynewsapp.R
 import com.myself223.mynewsapp.databinding.FragmentNoInternetBinding
+import com.myself223.mynewsapp.ui.CheckingForInternet.isNetworkAvailable
 
 
 class NoInternetFragment : Fragment() {
@@ -27,7 +28,14 @@ class NoInternetFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnCheck.setOnClickListener{
-            findNavController().navigateUp()
+            if (!isNetworkAvailable(requireContext())) {
+
+
+            }else{
+                findNavController().navigateUp()
+
+            }
+
 
 
         }
